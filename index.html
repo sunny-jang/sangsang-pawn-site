@@ -10,16 +10,20 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="상상 전당포 | 부산 양주 매입 · 위스키 매입 최고가">
 <meta property="og:description" content="부산·전국 양주·위스키 매입 전문 상상 전당포. 와인, 꼬냑, 고미술품, 만년필 매입. 출장·비대면 가능, 즉시 현금 지급.">
-<meta property="og:image" content="https://sangsang-whisky.co.kr/images/thumb-square.jpg">
+<meta property="og:image" content="https://sangsang-whisky.co.kr/images/naver-thumbnail-20261031.jpg">
+<meta property="og:image:secure_url" content="https://sangsang-whisky.co.kr/images/naver-thumbnail-20261031.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
-<meta property="og:image:alt" content="전국·부산·경남 양주 매입 - 상상 전당포">
+<meta property="og:image:alt" content="양주와 가치품을 전문 매입하는 상상 전당포">
 <meta property="og:url" content="https://sangsang-whisky.co.kr/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="상상 전당포 | 부산 양주 매입 · 위스키 매입 최고가">
 <meta name="twitter:description" content="부산·전국 양주·위스키 매입 전문 상상 전당포. 와인, 꼬냑, 고미술품, 만년필 매입. 출장·비대면 가능, 즉시 현금 지급.">
-<meta name="twitter:image" content="https://sangsang-whisky.co.kr/images/thumb-square.jpg">
+<meta name="twitter:image" content="https://sangsang-whisky.co.kr/images/naver-thumbnail-20261031.jpg">
 <meta name="twitter:domain" content="상상 전당포">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="image_src" href="https://sangsang-whisky.co.kr/images/naver-thumbnail-20261031.jpg">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="canonical" href="https://sangsang-whisky.co.kr/">
@@ -39,7 +43,7 @@
         "width": 512,
         "height": 512
       },
-      "image": "https://sangsang-whisky.co.kr/images/thumb-square.jpg",
+      "image": "https://sangsang-whisky.co.kr/images/naver-thumbnail-20261031.jpg",
       "telephone": "+82-10-7661-7845"
     },
     {
@@ -51,7 +55,7 @@
       "telephone": "+82-10-7661-7845",
       "priceRange": "₩₩",
       "image": [
-        "https://sangsang-whisky.co.kr/images/thumb-square.jpg",
+        "https://sangsang-whisky.co.kr/images/naver-thumbnail-20261031.jpg",
         "https://sangsang-whisky.co.kr/images/hero.jpg"
       ],
       "logo": "https://sangsang-whisky.co.kr/images/logo-square.png",
@@ -70,7 +74,7 @@
       "url": "https://sangsang-whisky.co.kr/",
       "name": "상상 전당포 | 부산 양주 매입 · 위스키 매입 최고가",
       "publisher": { "@id": "https://sangsang-whisky.co.kr/#org" },
-      "image": "https://sangsang-whisky.co.kr/images/thumb-square.jpg"
+      "image": "https://sangsang-whisky.co.kr/images/naver-thumbnail-20261031.jpg"
     }
   ]
 }
@@ -420,14 +424,51 @@ section { padding: 120px 0; }
 }
 .area-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 60px; }
 .area h2 { font-family: 'Noto Serif KR', serif; font-size: 42px; line-height: 1.25; margin: 0; }
+.area-copy { margin: 18px 0 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
 .tags { display: flex; gap: 10px; flex-wrap: wrap; }
 .tags span {
+  display: inline-flex;
+  align-items: center;
   border: 1px solid rgba(234, 211, 154, .22);
-  padding: 10px 14px;
+  border-radius: 999px;
+  padding: 10px 15px;
   color: #e9dac0;
   font-size: 12px;
-  background: rgba(255, 255, 255, .03);
+  font-weight: 600;
+  letter-spacing: -.01em;
+  background: linear-gradient(135deg, rgba(234, 211, 154, .1), rgba(255, 255, 255, .025));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .04);
+  backdrop-filter: blur(8px);
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
 }
+.tags span:hover {
+  transform: translateY(-2px);
+  border-color: rgba(234, 211, 154, .48);
+  background: linear-gradient(135deg, rgba(234, 211, 154, .17), rgba(255, 255, 255, .05));
+}
+.area-info { display: grid; gap: 22px; }
+.area-media {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px;
+  border: 1px solid rgba(234, 211, 154, .2);
+  border-radius: 18px;
+  background: rgba(11, 9, 7, .46);
+  backdrop-filter: blur(10px);
+}
+.area-media img {
+  width: 88px;
+  height: 88px;
+  flex: 0 0 88px;
+  object-fit: cover;
+  border-radius: 13px;
+  border: 1px solid rgba(234, 211, 154, .2);
+}
+.area-media figcaption { display: grid; gap: 5px; }
+.area-media strong { color: var(--cream); font-size: 14px; }
+.area-media span { color: var(--muted); font-size: 12px; line-height: 1.65; }
 
 /* === 마지막 CTA === */
 .final {
@@ -698,20 +739,34 @@ section { padding: 120px 0; }
   <!-- 지역 -->
   <section class="area">
     <div class="wrap area-grid">
-      <h2>경남·부산 중심,<br><span class="gold">전국 어디든 상담 가능</span></h2>
-      <div class="tags">
-        <span>#부산 전지역</span>
-        <span>#김해</span>
-        <span>#양산</span>
-        <span>#창원</span>
-        <span>#마산</span>
-        <span>#진해</span>
-        <span>#거제</span>
-        <span>#울산</span>
-        <span>#경주</span>
-        <span>#대구</span>
-        <span>#전국 출장 협의</span>
-        <span>#비대면 택배 매입</span>
+      <div class="reveal">
+        <div class="kicker">전국 양주 매입 상담</div>
+        <h2>경남·부산 중심,<br><span class="gold">전국 어디든 상담 가능</span></h2>
+        <p class="area-copy">지역과 수량을 알려주시면 출장 또는 비대면 매입 방법을 빠르게 안내해드립니다.</p>
+      </div>
+      <div class="area-info reveal">
+        <div class="tags" aria-label="지역별 양주 매입 안내">
+          <span>#서울양주매입</span>
+          <span>#김해양주매입</span>
+          <span>#울산양주매입</span>
+          <span>#대구양주매입</span>
+          <span>#양산양주매입</span>
+          <span>#광주양주매입</span>
+          <span>#용인양주매입</span>
+          <span>#시흥양주매입</span>
+          <span>#천안양주매입</span>
+          <span>#대전양주매입</span>
+          <span>#세종양주매입</span>
+          <span>#인천양주매입</span>
+          <span>#경기도양주매입</span>
+        </div>
+        <figure class="area-media">
+          <img src="images/naver-thumbnail-20261031.jpg" width="1200" height="1200" alt="양주와 가치품을 전문 매입하는 상상 전당포">
+          <figcaption>
+            <strong>양주·위스키·가치품 전문 매입</strong>
+            <span>제품 사진을 보내주시면 시세 확인 후 빠르게 견적을 안내해드립니다.</span>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
